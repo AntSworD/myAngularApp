@@ -8,4 +8,5 @@ module.exports = function(app) {
 
   // chapter 1
   app.get('/c1/helloWorld', Chapter1.helloWorld);
+  app.get('/c1/updateClock', Chapter1.updateClock);
 };
