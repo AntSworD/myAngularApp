@@ -27,7 +27,7 @@ var walk = function(path) {
     });
 }
 
-app.set('views', './app/views/pages');
+app.set('views', './app/views');
 app.set('view engine', 'jade');
 
 app.use(bodyParser.json());

@@ -1,0 +1,9 @@
+doctype
+html(ng-app)
+  head
+    title Simple app
+    script(
+      src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.js")
+  body
+    input(ng-model="name" type="text" placeholder="Your name")
+    h1 Hello {{ name }}
