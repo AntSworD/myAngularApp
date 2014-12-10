@@ -54,4 +54,3 @@ require('./config/routes')(app);
 app.listen(port);
 
 console.log('myAngularApp started on port ' + port);
-

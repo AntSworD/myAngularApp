@@ -1,9 +1,9 @@
 // helloWorld
 exports.helloWorld = function(req, res) {
-  res.render('chapter1/helloWorld');
+  res.render('chapter2/helloWorld');
 };
 
 // updateClock
 exports.updateClock = function(req, res) {
-  res.render('chapter1/updateClock');
+  res.render('chapter2/updateClock');
 };
