@@ -1,5 +1,6 @@
 var Index = require('../app/controllers/index');
 var Chapter2 = require('../app/controllers/chapter2');
+var Chapter6 = require('../app/controllers/chapter6');
 
 module.exports = function(app) {
 
@@ -9,4 +10,7 @@ module.exports = function(app) {
   // chapter 2
   app.get('/c2/helloWorld', Chapter2.helloWorld);
   app.get('/c2/updateClock', Chapter2.updateClock);
+
+  // chapter 6
+  app.get('/c6/parseValue', Chapter6.parseValue);
 };

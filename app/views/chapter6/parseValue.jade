@@ -1,0 +1,11 @@
+doctype
+html(ng-app='myApp')
+  head
+    title Parse Expression Example
+    script(
+      src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.js")
+  body
+    div(ng-controller="MyController")
+      input(ng-model="expr" type="text" placeholder="Enter an expression")
+      h2 {{ parseValue }}
+    script(src="/js/chapter6/parseValue.js")
