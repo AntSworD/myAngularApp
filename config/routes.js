@@ -13,4 +13,6 @@ module.exports = function(app) {
 
   // chapter 6
   app.get('/c6/parseValue', Chapter6.parseValue);
+  app.get('/c6/previewText', Chapter6.previewText);
+  app.get('/c6/config', Chapter6.config);
 };
