@@ -18,5 +18,6 @@ module.exports = function(app) {
   app.get('/c6/config', Chapter6.config);
 
   // chapter 7
-  app.get('/c7/signupForm', Chapter7.signupForm)
+  app.get('/c7/signupForm', Chapter7.signupForm);
+  app.get('/c7/signupFormSubmitted', Chapter7.signupFormSubmitted);
 };
