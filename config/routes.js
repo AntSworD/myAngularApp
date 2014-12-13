@@ -20,4 +20,5 @@ module.exports = function(app) {
   // chapter 7
   app.get('/c7/signupForm', Chapter7.signupForm);
   app.get('/c7/signupFormSubmitted', Chapter7.signupFormSubmitted);
+  app.get('/c7/signupFormFocus', Chapter7.signupFormFocus);
 };
