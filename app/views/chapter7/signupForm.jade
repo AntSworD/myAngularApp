@@ -13,8 +13,7 @@ html(ng-app='myApp')
           .large-12.columns
             label Your name
             input(type="text" placeholder="Name" name="name" ng-model="signup.name" ng-minlength=3 ng-maxlength=20 required)
-            - var ngShow = "signup_form.name.$dirty && signup_form.name.$invalid";
-            .error(ng-show!=and)
+            .error(ng-show!="signup_form.name.$dirty && signup_form.name.$invalid")
               small.error(ng-show="signup_form.name.$error.required") Your name is required.
               small.error(ng-show="signup_form.name.$error.minlength") Your name is required to be at least 3 characters
               small.error(ng-show="signup_form.name.$error.maxlength") name cannot be longer than 20 characters
@@ -22,8 +21,7 @@ html(ng-app='myApp')
           .large-12.columns
             label Your email
             input(type="email" placeholder="Email" name="email" ng-model="signup.email" ng-minlength=3 ng-maxlength=20 required)
-            - var ngShow = "signup_form.email.$dirty && signup_form.email.$invalid";
-            .error(ng-show!=ngShow)
+            .error(ng-show!="signup_form.email.$dirty && signup_form.email.$invalid")
               small.error(ng-show="signup_form.email.$error.required") Your email is required.
               small.error(ng-show="signup_form.email.$error.minlength") Your email is required to be at least 3 characters
               small.error(ng-show="signup_form.email.$error.email") That is not a valid email. Please input a valid email.
@@ -32,8 +30,7 @@ html(ng-app='myApp')
           .large-12.columns
               label Username
               input(type="text" placeholder="Desired username" name="username" ng-model="signup.username" ng-minlength=3 ng-maxlength=20 required)
-              - var ngShow = "signup_form.username.$dirty && signup_form.username.$invalid";
-              .error(ng-show!=ngShow)
+              .error(ng-show!="signup_form.username.$dirty && signup_form.username.$invalid")
                 small.error(ng-show="signup_form.username.$error.required") Please input a username
                 small.error(ng-show="signup_form.username.$error.minlength") Your username is required to be at least 3 characters
                 small.error(ng-show="signup_form.username.$error.maxlength") Your username cannot be longer than 20 characters
