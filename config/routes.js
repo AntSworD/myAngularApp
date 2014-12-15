@@ -2,6 +2,7 @@ var Index = require('../app/controllers/index');
 var Chapter2 = require('../app/controllers/chapter2');
 var Chapter6 = require('../app/controllers/chapter6');
 var Chapter7 = require('../app/controllers/chapter7');
+var Chapter8 = require('../app/controllers/chapter8');
 
 module.exports = function(app) {
 
@@ -21,4 +22,7 @@ module.exports = function(app) {
   app.get('/c7/signupForm', Chapter7.signupForm);
   app.get('/c7/signupFormSubmitted', Chapter7.signupFormSubmitted);
   app.get('/c7/signupFormFocus', Chapter7.signupFormFocus);
+
+  // chapter 8
+  app.get('/c8/greeting', Chapter8.greeting);
 };
