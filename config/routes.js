@@ -26,4 +26,5 @@ module.exports = function(app) {
   // chapter 8
   app.get('/c8/greeting', Chapter8.greeting);
   app.get('/c8/scope', Chapter8.scope);
+  app.get('/c8/directive', Chapter8.directive);
 };
