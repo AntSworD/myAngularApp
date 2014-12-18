@@ -12,3 +12,8 @@ exports.scope = function(req, res) {
 exports.directive = function(req, res) {
   res.render('chapter8/directive');
 };
+
+// someAttr
+exports.someAttr = function(req, res) {
+  res.render('chapter8/someAttr');
+};
