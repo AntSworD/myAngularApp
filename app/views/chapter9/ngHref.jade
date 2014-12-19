@@ -1,0 +1,17 @@
+doctype
+html(ng-app='myApp')
+  head
+    title ngHref
+    script(
+      src="http://cdn.bootcss.com/angular.js/1.2.0rc3/angular.js")
+  body
+    a(ng-href="{{ myHref }}") I'm feeling lucky, when I load
+    br
+    a(href="{{ myHref }}") I'm feeling 404
+    script.
+      angular.module('myApp', [])
+      .run(function($rootScope, $timeout) {
+        $timeout(function() {
+          $rootScope.myHref = 'http://google.com';
+        }, 2000);
+      });
