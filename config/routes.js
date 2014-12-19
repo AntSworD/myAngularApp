@@ -3,6 +3,7 @@ var Chapter2 = require('../app/controllers/chapter2');
 var Chapter6 = require('../app/controllers/chapter6');
 var Chapter7 = require('../app/controllers/chapter7');
 var Chapter8 = require('../app/controllers/chapter8');
+var Chapter9 = require('../app/controllers/chapter9');
 
 module.exports = function(app) {
 
@@ -28,4 +29,7 @@ module.exports = function(app) {
   app.get('/c8/scope', Chapter8.scope);
   app.get('/c8/directive', Chapter8.directive);
   app.get('/c8/someAttr', Chapter8.someAttr);
+
+  // chapter 9
+  app.get('/c9/ngDisabled', Chapter9.ngDisabled);
 };

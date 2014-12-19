@@ -1,0 +1,16 @@
+doctype
+html(ng-app='myApp')
+  head
+    title ngDisabled
+    script(
+      src="http://cdn.bootcss.com/angular.js/1.2.0rc3/angular.js")
+  body
+    textarea(ng-disabled="isDisabled") Wait 5 seconds
+    script.
+      angular.module('myApp', [])
+      .run(function($rootScope, $timeout) {
+        $rootScope.isDisabled = true;
+        $timeout(function() {
+          $rootScope.isDisabled = false;
+        }, 5000);
+      });
