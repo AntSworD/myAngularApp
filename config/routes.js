@@ -32,4 +32,5 @@ module.exports = function(app) {
 
   // chapter 9
   app.get('/c9/ngDisabled', Chapter9.ngDisabled);
+  app.get('/c9/ngSelected', Chapter9.ngSelected);
 };

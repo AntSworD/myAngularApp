@@ -1,0 +1,16 @@
+doctype
+html(ng-app='myApp')
+  head
+    title ngSelected
+    script(
+      src="http://cdn.bootcss.com/angular.js/1.2.0rc3/angular.js")
+  body
+    label Select Two Fish:
+    input(type="checkbox"
+          ng-model="isTwoFish")
+    br
+    select
+      option OneFish
+      option(ng-selected='isTwoFish') Two Fish
+      script.
+        angular.module('myApp', []);
