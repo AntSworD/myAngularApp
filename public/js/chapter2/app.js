@@ -8,6 +8,6 @@ function MyController($scope, $timeout) {
   };
   setInterval(function() {
     $scope.$apply(updateClock);
-  }, 1000)
+  }, 1000);
   updateClock();
 }

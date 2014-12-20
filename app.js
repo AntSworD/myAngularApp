@@ -1,5 +1,6 @@
 var express = require('express');
 var path = require('path');
+var fs = require('fs');
 var port = process.env.PORT || 3400;
 var app = express();
 var bodyParser = require('body-parser');
@@ -19,13 +20,13 @@ var walk = function(path) {
 
       if (stat.isFile()) {
         if (/(.*)\.(js|coffee)/.test(file)) {
-          require(newPath)
+          require(newPath);
         }
       } else if (stat.isDirectory()){
         walk(newPath);
       }
     });
-}
+};
 
 app.set('views', './app/views');
 app.set('view engine', 'jade');
