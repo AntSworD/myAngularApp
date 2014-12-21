@@ -17,3 +17,13 @@ exports.ngHref = function(req, res) {
 exports.ngSrc = function(req, res) {
   res.render('chapter9/ngSrc');
 };
+
+// ngApp
+exports.ngApp = function(req, res) {
+  res.render('chapter9/ngApp');
+};
+
+// ngApp
+exports.ngApp = function(req, res) {
+  res.render('chapter9/ngApp');
+};

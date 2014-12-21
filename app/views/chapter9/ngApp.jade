@@ -1,0 +1,18 @@
+doctype
+html(ng-app='myApp')
+  head
+    title ngApp
+    script(
+      src="http://cdn.bootcss.com/angular.js/1.2.0rc3/angular.js")
+  body
+    {{ someProperty }}
+    button(ng-click="someAction()") Do something
+
+    script.
+      angular.module('myApp', [])
+      .run(function($rootScope) {
+        $rootScope.someProperty = "Hello computer";
+        $rootScope.someAction = function() {
+          $rootScope.someProperty = "Hello human";
+        };
+      });
