@@ -1,0 +1,21 @@
+doctype
+html(ng-app='myApp')
+  head
+    title ngController
+    script(
+      src="http://cdn.bootcss.com/angular.js/1.2.0rc3/angular.js")
+  body
+    div(ng-controller="SomeController")
+      {{ someModel.someProperty }}
+      button(ng-click="someAction()") Do something
+
+    script.
+      angular.module('myApp', [])
+      .controller('SomeController', function($scope) {
+        $scope.someModel = {
+          someProperty: 'Hello computer'
+        };
+        $scope.someAction = function() {
+          $scope.someModel.someProperty = "Hello human";
+        };
+      });

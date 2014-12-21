@@ -27,3 +27,8 @@ exports.ngApp = function(req, res) {
 exports.ngApp = function(req, res) {
   res.render('chapter9/ngApp');
 };
+
+// ngController
+exports.ngController = function(req, res) {
+  res.render('chapter9/ngController');
+};
