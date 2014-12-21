@@ -37,3 +37,8 @@ exports.ngController = function(req, res) {
 exports.ngController1 = function(req, res) {
   res.render('chapter9/ngController1');
 };
+
+// ngController
+exports.ngController2 = function(req, res) {
+  res.render('chapter9/ngController2');
+};
