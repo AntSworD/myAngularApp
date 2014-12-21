@@ -34,4 +34,5 @@ module.exports = function(app) {
   app.get('/c9/ngDisabled', Chapter9.ngDisabled);
   app.get('/c9/ngSelected', Chapter9.ngSelected);
   app.get('/c9/ngHref', Chapter9.ngHref);
+  app.get('/c9/ngSrc', Chapter9.ngSrc);
 };

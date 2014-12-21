@@ -1,0 +1,20 @@
+doctype
+html(ng-app='myApp')
+  head
+    title ngSrc
+    script(
+      src="http://cdn.bootcss.com/angular.js/1.2.0rc3/angular.js")
+  body
+    h1 WrongWay
+    img(src="{{ imgSrc }}")
+
+    h1 RightWay
+    img(ng-src="{{ imgSrc }}")
+
+    script.
+      angular.module('myApp', [])
+      .run(function($rootScope, $timeout) {
+        $timeout(function() {
+          $rootScope.imgSrc = 'https://www.google.com/images/srpr/logo11w.png';
+        }, 10000);
+      });

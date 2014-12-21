@@ -12,3 +12,8 @@ exports.ngSelected = function(req, res) {
 exports.ngHref = function(req, res) {
   res.render('chapter9/ngHref');
 };
+
+// ngSrc
+exports.ngSrc = function(req, res) {
+  res.render('chapter9/ngSrc');
+};
