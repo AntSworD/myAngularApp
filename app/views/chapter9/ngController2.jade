@@ -1,0 +1,29 @@
+doctype
+html(ng-app='myApp')
+  head
+    title ngController 1
+    script(
+      src="http://cdn.bootcss.com/angular.js/1.2.0rc3/angular.js")
+  body
+    div(ng-controller="SomeController")
+      {{ someModel.someBareValue }}
+      button(ng-click="someAction()") Communicate to Child
+      div(ng-controller="ChildController")
+        {{ someModel.someBareValue }}
+        button(ng-click="childAction()") Communicate to parent
+
+    script.
+      angular.module('myApp', [])
+      .controller('SomeController', function($scope) {
+        $scope.someModel = {
+          someBareValue : 'Hello computer'
+        };
+        $scope.someAction = function() {
+          $scope.someModel.someBareValue = "Hello human, from parent";
+        };
+      })
+      .controller('ChildController', function($scope) {
+        $scope.childAction = function() {
+          $scope.someModel.someBareValue = 'hello human, from child';
+        };
+      });
