@@ -32,3 +32,8 @@ exports.ngApp = function(req, res) {
 exports.ngController = function(req, res) {
   res.render('chapter9/ngController');
 };
+
+// ngSwitch
+exports.ngSwitch = function(req, res) {
+  res.render('chapter9/ngSwitch');
+};

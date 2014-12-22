@@ -37,4 +37,5 @@ module.exports = function(app) {
   app.get('/c9/ngSrc', Chapter9.ngSrc);
   app.get('/c9/ngApp', Chapter9.ngApp);
   app.get('/c9/ngController', Chapter9.ngController);
+  app.get('/c9/ngSwitch', Chapter9.ngSwitch);
 };
