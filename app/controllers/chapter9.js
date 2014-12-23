@@ -67,3 +67,8 @@ exports.ngInit = function(req, res) {
 exports.ngTemplateSyntax = function(req, res) {
   res.render('chapter9/ngTemplateSyntax');
 };
+
+// ngBind
+exports.ngBind = function(req, res) {
+  res.render('chapter9/ngBind');
+};

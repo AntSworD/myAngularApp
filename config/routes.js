@@ -44,4 +44,5 @@ module.exports = function(app) {
   app.get('/c9/ngRepeat', Chapter9.ngRepeat);
   app.get('/c9/ngInit', Chapter9.ngInit);
   app.get('/c9/ngTemplateSyntax', Chapter9.ngTemplateSyntax);
+  app.get('/c9/ngBind', Chapter9.ngBind);
 };

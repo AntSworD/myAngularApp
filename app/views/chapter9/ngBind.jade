@@ -1,0 +1,12 @@
+doctype
+html(ng-app='myApp')
+  head
+    title ngBind
+    script(
+      src="http://cdn.bootcss.com/angular.js/1.2.0rc3/angular.js")
+  body
+    div(ng-init="greeting='Hello'")
+      p(ng-bind="greeting")
+
+    script.
+      angular.module('myApp', []);
