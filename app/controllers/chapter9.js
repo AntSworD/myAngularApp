@@ -52,3 +52,8 @@ exports.ngSwitch = function(req, res) {
 exports.ngIf = function(req, res) {
   res.render('chapter9/ngIf');
 };
+
+// ngRepeat
+exports.ngRepeat = function(req, res) {
+  res.render('chapter9/ngRepeat');
+};

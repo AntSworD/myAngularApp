@@ -1,0 +1,26 @@
+doctype
+html(ng-app='myApp')
+  head
+    title ngRepeat
+    script(
+      src="http://cdn.bootcss.com/angular.js/1.2.0rc3/angular.js")
+  body
+    ul(ng-controller="PeopleController")
+      li(ng-repeat="person in people" ng-class="{even: !$even, odd: !$odd}").
+        {{ person.name }} lives in {{ person.city }}
+    style(type='text/css').
+      .odd {
+        background-color: blue;
+      }
+      .even {
+        background-color: red;
+      }
+
+    script.
+      angular.module('myApp', [])
+      .controller('PeopleController', function($scope) {
+        $scope.people = [
+          {name: 'Ari', city: 'San Francisco'},
+          {name: 'Erik', city: 'Seattle'}
+        ];
+      });
