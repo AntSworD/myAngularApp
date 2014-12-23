@@ -1,0 +1,12 @@
+doctype
+html(ng-app='myApp')
+  head
+    title ngCloak
+    script(
+      src="http://cdn.bootcss.com/angular.js/1.2.0rc3/angular.js")
+  body
+    div(ng-init="greeting='HelloWorld'")
+      p(ng-cloak) {{ greeting }}
+
+    script.
+      angular.module('myApp', []);

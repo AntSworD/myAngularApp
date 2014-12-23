@@ -72,3 +72,9 @@ exports.ngTemplateSyntax = function(req, res) {
 exports.ngBind = function(req, res) {
   res.render('chapter9/ngBind');
 };
+
+
+// ngCloak
+exports.ngCloak = function(req, res) {
+  res.render('chapter9/ngCloak');
+};
