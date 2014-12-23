@@ -1,0 +1,19 @@
+doctype
+html(ng-app='myApp')
+  head
+    title ngShowAndngHide
+    script(
+      src="http://cdn.bootcss.com/angular.js/1.2.0rc3/angular.js")
+  body
+    div(ng-show="2 + 2 == 5").
+      2 + 2 isn't 5, don't show
+    div(ng-show="2 + 2 == 4").
+      2 + 2 is 4, do show
+
+    div(ng-hide="2 + 2 == 5").
+      2 + 2 isn't 5, don't hide
+    div(ng-hide="2 + 2 == 4").
+      2 + 2 is 4, do hide
+
+    script.
+      angular.module('myApp', []);

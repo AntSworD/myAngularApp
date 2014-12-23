@@ -73,8 +73,12 @@ exports.ngBind = function(req, res) {
   res.render('chapter9/ngBind');
 };
 
-
 // ngCloak
 exports.ngCloak = function(req, res) {
   res.render('chapter9/ngCloak');
+};
+
+// ngShowAndngHide
+exports.ngShowAndngHide = function(req, res) {
+  res.render('chapter9/ngShowAndngHide');
 };

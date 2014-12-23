@@ -46,4 +46,5 @@ module.exports = function(app) {
   app.get('/c9/ngTemplateSyntax', Chapter9.ngTemplateSyntax);
   app.get('/c9/ngBind', Chapter9.ngBind);
   app.get('/c9/ngCloak', Chapter9.ngCloak);
+  app.get('/c9/ngShowAndngHide', Chapter9.ngShowAndngHide);
 };
