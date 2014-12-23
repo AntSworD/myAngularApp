@@ -57,3 +57,8 @@ exports.ngIf = function(req, res) {
 exports.ngRepeat = function(req, res) {
   res.render('chapter9/ngRepeat');
 };
+
+// ngInit
+exports.ngInit = function(req, res) {
+  res.render('chapter9/ngInit');
+};

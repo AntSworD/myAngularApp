@@ -1,0 +1,12 @@
+doctype
+html(ng-app='myApp')
+  head
+    title ngInit
+    script(
+      src="http://cdn.bootcss.com/angular.js/1.2.0rc3/angular.js")
+  body
+    div(ng-init="greeting='Hello';person='World'").
+      {{ greeting }} {{ person }}
+
+    script.
+      angular.module('myApp', []);
