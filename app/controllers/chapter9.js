@@ -62,3 +62,8 @@ exports.ngRepeat = function(req, res) {
 exports.ngInit = function(req, res) {
   res.render('chapter9/ngInit');
 };
+
+// ngTemplateSyntax
+exports.ngTemplateSyntax = function(req, res) {
+  res.render('chapter9/ngTemplateSyntax');
+};
