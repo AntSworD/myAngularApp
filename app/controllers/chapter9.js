@@ -82,3 +82,8 @@ exports.ngCloak = function(req, res) {
 exports.ngShowAndngHide = function(req, res) {
   res.render('chapter9/ngShowAndngHide');
 };
+
+// ngChange
+exports.ngChange = function(req, res) {
+  res.render('chapter9/ngChange');
+};
