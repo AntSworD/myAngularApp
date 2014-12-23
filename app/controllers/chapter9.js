@@ -47,3 +47,8 @@ exports.ngController2 = function(req, res) {
 exports.ngSwitch = function(req, res) {
   res.render('chapter9/ngSwitch');
 };
+
+// ngIf
+exports.ngIf = function(req, res) {
+  res.render('chapter9/ngIf');
+};
