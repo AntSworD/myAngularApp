@@ -102,3 +102,8 @@ exports.ngClick = function(req, res) {
 exports.ngSelect = function(req, res) {
   res.render('chapter9/ngSelect');
 };
+
+// ngSubmit
+exports.ngSubmit = function(req, res) {
+  res.render('chapter9/ngSubmit');
+};
