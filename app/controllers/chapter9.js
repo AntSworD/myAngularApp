@@ -87,3 +87,8 @@ exports.ngShowAndngHide = function(req, res) {
 exports.ngChange = function(req, res) {
   res.render('chapter9/ngChange');
 };
+
+// ngForm
+exports.ngForm = function(req, res) {
+  res.render('chapter9/ngForm');
+};

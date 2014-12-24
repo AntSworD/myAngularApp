@@ -48,4 +48,5 @@ module.exports = function(app) {
   app.get('/c9/ngCloak', Chapter9.ngCloak);
   app.get('/c9/ngShowAndngHide', Chapter9.ngShowAndngHide);
   app.get('/c9/ngChange', Chapter9.ngChange);
+  app.get('/c9/ngForm', Chapter9.ngForm);
 };
