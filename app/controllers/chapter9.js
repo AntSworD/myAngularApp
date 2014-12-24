@@ -97,3 +97,8 @@ exports.ngForm = function(req, res) {
 exports.ngClick = function(req, res) {
   res.render('chapter9/ngClick');
 };
+
+// ngSelect
+exports.ngSelect = function(req, res) {
+  res.render('chapter9/ngSelect');
+};
