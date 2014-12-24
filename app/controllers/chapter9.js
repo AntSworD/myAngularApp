@@ -92,3 +92,8 @@ exports.ngChange = function(req, res) {
 exports.ngForm = function(req, res) {
   res.render('chapter9/ngForm');
 };
+
+// ngClick
+exports.ngClick = function(req, res) {
+  res.render('chapter9/ngClick');
+};
