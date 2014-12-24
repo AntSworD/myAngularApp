@@ -107,3 +107,8 @@ exports.ngSelect = function(req, res) {
 exports.ngSubmit = function(req, res) {
   res.render('chapter9/ngSubmit');
 };
+
+// ngClass
+exports.ngClass = function(req, res) {
+  res.render('chapter9/ngClass');
+};

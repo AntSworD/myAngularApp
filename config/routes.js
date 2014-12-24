@@ -52,4 +52,5 @@ module.exports = function(app) {
   app.get('/c9/ngClick', Chapter9.ngClick);
   app.get('/c9/ngSelect', Chapter9.ngSelect);
   app.get('/c9/ngSubmit', Chapter9.ngSubmit);
+  app.get('/c9/ngClass', Chapter9.ngClass);
 };

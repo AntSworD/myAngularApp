@@ -1,0 +1,27 @@
+doctype
+html(ng-app='myApp')
+  head
+    title ngClass
+    script(
+      src="http://cdn.bootcss.com/angular.js/1.2.0rc3/angular.js")
+  body
+    div(ng-controller="LotteryController")
+      div(ng-class="{red: x > 5}"
+          ng-if="x > 5")
+          | You won
+      button(ng-click="x = generateNumber()"
+             ng-init="x = 0")
+        | Draw Number
+      p Number is: {{ x }}
+    style(type="text/css").
+      .red {
+        background-color: red;
+      }
+
+    script.
+      angular.module('myApp', [])
+      .controller('LotteryController', function($scope) {
+        $scope.generateNumber = function() {
+          return Math.floor((Math.random() * 10) + 1);
+        };
+      });
