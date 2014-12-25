@@ -4,6 +4,7 @@ var Chapter6 = require('../app/controllers/chapter6');
 var Chapter7 = require('../app/controllers/chapter7');
 var Chapter8 = require('../app/controllers/chapter8');
 var Chapter9 = require('../app/controllers/chapter9');
+var Chapter10 = require('../app/controllers/chapter10');
 
 module.exports = function(app) {
 
@@ -53,4 +54,7 @@ module.exports = function(app) {
   app.get('/c9/ngSelect', Chapter9.ngSelect);
   app.get('/c9/ngSubmit', Chapter9.ngSubmit);
   app.get('/c9/ngClass', Chapter9.ngClass);
+
+  // chapter 10
+  app.get('/c10/isolateScope', Chapter10.isolateScope);
 };
