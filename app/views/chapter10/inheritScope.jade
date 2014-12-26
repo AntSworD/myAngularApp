@@ -1,0 +1,28 @@
+doctype
+html(ng-app='myApp')
+  head
+    title inheritScope
+    script(
+      src="http://cdn.bootcss.com/angular.js/1.2.0rc3/angular.js")
+  body
+    div(ng-init="myProperty = 'wow, this is cool'")
+      | Serrounding scope: {{ myProperty }}
+      div(my-inherit-scope-directive)
+      div(my-directive)
+
+    script.
+      angular.module('myApp', [])
+      .directive('myDirective', function() {
+        return {
+          restrict: 'A',
+          template: 'Inside myDirective, isolate scope: {{ myProperty }}',
+          scope: {}
+        };
+      })
+      .directive('myInheritScopeDirective', function() {
+        return {
+          restrict: 'A',
+          template: 'Inside an directive with inherit scope: {{ myProperty }}',
+          scope: true
+        };
+      });

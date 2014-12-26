@@ -57,4 +57,5 @@ module.exports = function(app) {
 
   // chapter 10
   app.get('/c10/isolateScope', Chapter10.isolateScope);
+  app.get('/c10/inheritScope', Chapter10.inheritScope);
 };
