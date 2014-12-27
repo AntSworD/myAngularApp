@@ -1,0 +1,24 @@
+doctype
+html(ng-app='myApp')
+  head
+    title scopeExample
+    script(
+      src="http://cdn.bootcss.com/angular.js/1.2.0rc3/angular.js")
+  body
+    input(type="text" ng-model="to")
+    div(scope-example ng-model="to"
+        on-send="sendMail(email)"
+        from-name="ari@fullstack.io")
+
+    script.
+      angular.module('myApp', [])
+      .directive('scopeExample', function() {
+        return {
+          restrict: 'A',
+          scope: {
+            ngModel: '=',
+            onSend: '&',
+            fromName: '@'
+          }
+        };
+      });
